@@ -1,28 +1,76 @@
- import React from "react";
-import Card from "./Card";
-import Scards from "./Scards";
+import React from "react";
+import { IoMenuSharp } from "react-icons/io5";
+import { FaRegCalendarCheck } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-function Main (){
+function Main(){
+    const navigate = useNavigate();
+
+    // const handleLogout = () => {
+    //     localStorage.removeItem("isLoggedIn");
+    //     navigate("/main");
+    // };
+
+    const handleLogout = () => {
+        // Clear the local storage item
+        localStorage.removeItem("isLoggedIn");
+        
+        // Update the local state if needed
+        // Optionally, you can use a state management solution to update the login state globally
+
+        // Navigate to the login page
+        navigate("/main");  // Redirect to login page
+    };
+
+
     return(
         <>
-            <div className="Main">
-                <div className="FirstMain">
-                <Card p="Lorem ipsum dolor sit amet consectetur, adipisicing elit."/>
-                <Card p="Fuga necessitatibus incidunt ex hic soluta rem reiciendi."/>
-                <Card p="Facilis quas quasi eveniet nostrum officiis repellat rer."/>
-                <Card p="Um itaque maiores sed assumenda ut, excepturi sequi quod."/>
-                <Card p="Nisi nobis quaerat! Nesciunt voluptatum perspiciatis,rep."/>
-                <Card p="Ellendus laboriosam consequatur necessitatibus,o numquam."/>
-                </div>
-                
-                <div className="SecondMain">
-                <Scards p="Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
-                <Scards p="facilis quas quasi eveniet nostrum officiis repellat rer."/>
-                <Scards p="nisi nobis quaerat! Nesciunt voluptatum perspiciatis,rep."/>
-                </div>
+            <div className="Navbar">
+                <div className="Menu"> <IoMenuSharp /> </div>
+                <div className="main-heading"> TODOs </div>
+                <div> <FaRegCalendarCheck /> </div>
             </div>
+
+            <div className="taskOne">
+                <div className="date"> Date: Wed,22 Jan 2020 </div>  
+                <div className="task"> task 1 </div>
+                <div> <p className="finish">FINISH</p> </div>
+            </div>
+            <br/>
+            <div className="taskOne">
+                <div className="date"> Date: Wed,22 Jan 2020 </div>  
+                <div className="task"> task 2 </div>
+                <div> <p className="finish">FINISH</p> </div>
+            </div>
+
+            <div><button className="circle">+</button></div>
+            <div className="final">
+                <div className="color">TODOS</div>
+                <div>FINISHED</div>
+            </div>
+
+            <br/>
+
+            <div className="Navbar">
+                <div className="Menu"> <IoMenuSharp /> </div>
+                <div className="main-heading"> TODOs </div>
+                <div> <FaRegCalendarCheck /> </div>
+            </div>
+
+            <div className="taskOne">
+                <div className="date"> Date: Wed,22 Jan 2020 </div>  
+                <div className="task"> task 2 </div>
+                <div> <p className="finish">FINISH</p> </div>
+            </div>
+            <br/>
+            <div><button className="circle">+</button></div>
+            <div className="final">
+                <div>TODOS</div>
+                <div className="color">FINISHED</div>
+            </div>
+            <button onClick={handleLogout}>Logout</button>
         </>
     )
 }
-
 export default Main;
+

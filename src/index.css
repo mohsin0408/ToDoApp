@@ -9,86 +9,124 @@ body{
   align-items: center;
   margin: 40px;
   padding: 40px;
-  background-color: rgba(130, 130, 128, 0.32);
+  background-color: rgba(205, 205, 202, 0.32);
 }
-h1{
-  font-size: 90px;
-  text-align: center;
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    margin: 40px;
 }
-h4{
-  margin: 10px 8px 10px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.para{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.NewHeader{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-}
-.Template{
-  display: flex;
-  list-style: none;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  border-bottom: double black;
-  border-top: double black;
-  margin: 9px;
-  padding: 9px;
-  cursor: pointer;
-}
-.FirstMain{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-  margin: 20px;
-  background-color: #fff;
-}
-.SecondMain{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-.Scards{
+
+.new-form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.img{
-  display: flex;
-  margin-bottom: 10px;
-}
-.footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  padding: 20px;
-  margin: 20px;
-  border-bottom: double black;
-  border-top: double black;
+  gap: 20px;
+  padding: 40px;
+  margin: 40px;
 }
 
-.projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px
-}
-.log{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+.new-form div {
+  margin-bottom: 1rem; /* Add space between form elements */
 }
 
+.new-form label {
+  display: block; /* Ensures the label is a block-level element */
+  margin-bottom: 0.5rem; /* Adds space below the label */
+}
+
+.new-form input {
+  padding: 0.5rem; /* Adds some padding inside the input field */
+}
+
+.main-heading{
+  /* background-color: white; */
+  color: gold;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-sm{
+  text-align: center;
+  color: goldenrod;
+}
 span{
-  margin: 5px 15px;
+  font-style: italic;
+  text-align: center;
+}
+.newInput{
+  border-radius: 5px;
+  padding: 2px;
+  outline: none;
+  border: 1px solid black;
+  width: 400px;
+  height: 40px;
+}
+.newButton{
+  border-radius: 4px;
+  outline: none;
+  padding: 15px;
+  background-color: goldenrod;
+  color: white;
+  border: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 134px;
+  font-size: 38px;
+  margin-top: 40px;
+}
+.taskOne{
+  background-color: white;
+}
+.date{
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+.finish{
+  outline: none;
+  padding: 15px;
+  background-color: goldenrod;
+  color: white;
+  border: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+}
+.task{
+  padding: 5px 25px 25px 5px;
+}
+.circle{
+  padding: 20px;
+  color: white;
+  border: 1px solid goldenrod;
+  border-radius: 48%;
+  background-color: goldenrod;
+  font-size: 30px;
+  margin: 100px 0 0 500px;
+}
+.final{
+  display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px solid;
+    margin-top: 5px;
+    background-color: white;
+    font-weight: bold;
+}
+.color{
+  color: goldenrod;
 }
