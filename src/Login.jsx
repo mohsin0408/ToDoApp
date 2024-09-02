@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({setIsLoggedIn}) =>{
+const Login = () =>{
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const navigate = useNavigate();
     const validEmail = "Mohsinali@gmail.com";
-    const validPassword = "mohsin0987"
+    const validPassword = "mohsin0987";
 
     const login = (e)=>{
         e.preventDefault();
         if ( email === validEmail && password === validPassword ) {
-          localStorage.setItem("isLoggedIn", "true"); 
-          setIsLoggedIn(true);
+          // localStorage.setItem("isLoggedIn", "true"); 
+          // setIsLoggedIn(true);
           navigate("/");
         } else {
             alert("All fields are mandatory");
