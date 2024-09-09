@@ -10,7 +10,7 @@ function ToDoList({ tasks, moveTaskToDone }) {
                         <div className="task"> {task.text} </div>
                         <div>
                             <button className="finish" onClick={() => moveTaskToDone(index)}>
-                                NOT FINISHED
+                               TASK lEFT
                             </button>
                         </div>
                     </div>
@@ -21,3 +21,5 @@ function ToDoList({ tasks, moveTaskToDone }) {
 }
 
 export default ToDoList;
+
+

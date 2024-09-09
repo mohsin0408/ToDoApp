@@ -10,7 +10,7 @@ function Main() {
     const [tasks, setTasks] = useState([]);
     const [inputList, setInputList] = useState('');
     const [doneTasks, setDoneTasks] = useState([]);
-    const [view, setView] = useState('todos'); // Track which view is active
+    const [view, setView] = useState('todos'); 
 
     const handleInputChange = (event) => {
         setInputList(event.target.value);
@@ -94,3 +94,5 @@ function Main() {
 }
 
 export default Main;
+
+
