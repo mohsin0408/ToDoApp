@@ -27,21 +27,23 @@ body{
   margin: 40px;
 }
 
-.new-form div {
-  margin-bottom: 1rem; /* Add space between form elements */
-}
 
-.new-form label {
-  display: block; /* Ensures the label is a block-level element */
-  margin-bottom: 0.5rem; /* Adds space below the label */
-}
+/* .new-form div {
+  margin-bottom: 1rem; 
+} */
 
-.new-form input {
-  padding: 0.5rem; /* Adds some padding inside the input field */
-}
+
+/* .new-form label {
+  display: block; 
+  margin-bottom: 0.5rem; 
+} */
+
+/* .new-form input {
+  padding: 0.5rem; 
+} */
 
 .main-heading{
-  /* background-color: white; */
+  
   color: gold;
 }
 .main-div{
@@ -182,5 +184,167 @@ input {
   justify-content: center;
   align-items: center;
   gap: 6px;
+}
+
+
+
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .Navbar {
+    gap: 20px;
+    font-size: 24px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .main-div {
+    margin: 20px;
+  }
+
+  .newInput {
+    width: 100%;
+  }
+
+  .newButton {
+    width: 100%;
+  }
+
+  .center-div {
+    padding: 15px;
+  }
+
+  .final {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .color, .logout {
+    width: 100%;
+  }
+
+  .taskOne {
+    font-size: 14px;
+  }
+
+  .circle {
+    font-size: 24px;
+    padding: 15px;
+  }
+
+  input {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+  .Navbar {
+    font-size: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-heading {
+    font-size: 20px;
+  }
+
+  .newInput {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .newButton {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .center-div {
+    padding: 10px;
+  }
+
+  .final {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .color, .logout {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .taskOne {
+    font-size: 12px;
+  }
+
+  .circle {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+}
+
+/* */
+@media (max-width: 320px) {
+  .Navbar {
+    font-size: 18px;
+  }
+
+  .main-heading {
+    font-size: 18px;
+  }
+
+  .newInput {
+    font-size: 14px;
+  }
+
+  .newButton {
+    padding: 8px;
+  }
+
+  .center-div {
+    padding: 5px;
+  }
+
+  .final {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .color, .logout {
+    padding: 8px;
+  }
+
+  .taskOne {
+    font-size: 10px;
+  }
+
+  .circle {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  textarea {
+    font-size: 12px;
+  }
 }
 

@@ -1,25 +1,24 @@
-import React from "react";
+import React from 'react';
 
-function ToDoList({ tasks, moveTaskToDone }) {
-    return (
-        <div>
-            <ol>
-                {tasks.map((task, index) => (
-                    <div className="taskOne" key={index}>
-                        <div className="date"> Date: {task.date} </div>
-                        <div className="task"> {task.text} </div>
-                        <div>
-                            <button className="finish" onClick={() => moveTaskToDone(index)}>
-                               TASK lEFT
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </ol>
-        </div>
-    );
-}
+const ToDoList = ({ tasks, moveTaskToDone }) => (
+  <div>
+    <ol>
+      {tasks.length > 0 ? (
+        tasks.map((task, index) => (
+          <li className="taskOne" key={index}>
+            <div className="date">Date: {task.date}</div>
+            <div className="task">{task.text}</div>
+            <button className="finish" onClick={() => moveTaskToDone(index)}>TASK LEFT</button>
+          </li>
+        ))
+      ) : (
+        <p>No tasks available</p>
+      )}
+    </ol>
+  </div>
+);
 
 export default ToDoList;
+
 
 
